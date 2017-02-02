@@ -1,0 +1,2 @@
+defmodule ConcurrencyMeetup do
+end
