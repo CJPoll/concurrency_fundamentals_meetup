@@ -1,24 +1,23 @@
 # ConcurrencyMeetup
 
-**TODO: Add description**
-
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+This assumes you already have elixir installed
 
-  1. Add `concurrency_meetup` to your list of dependencies in `mix.exs`:
+```bash
+https://github.com/CJPoll/concurrency_fundamentals_meetup;
+cd concurrency_fundamentals_meetup;
 
-    ```elixir
-    def deps do
-      [{:concurrency_meetup, "~> 0.1.0"}]
-    end
-    ```
+mix deps.get;
+mix compile;
 
-  2. Ensure `concurrency_meetup` is started before your application:
+mix test;
+```
 
-    ```elixir
-    def application do
-      [applications: [:concurrency_meetup]]
-    end
-    ```
+## Usage
 
+There are preexisting tests in `test/concurrency_meetup_test.exs`. Modify
+`lib/concurrency_meetup.ex` to make the tests pass one by one.
+
+All tests are initially skipped. Remove the `@tag :skip` above a test to have
+the test run when you do `mix test`.
